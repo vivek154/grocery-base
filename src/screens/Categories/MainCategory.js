@@ -15,7 +15,7 @@ const MainCategory=(props)=>
 
     return (
         <>
-        <PageHeadBar title="Categories"></PageHeadBar>
+        <PageHeadBar title="Categories" navigation={navigation}></PageHeadBar>
         <ScrollView >
            <View style={{flex:1, flexDirection: "row", marginBottom:50, flexWrap: "wrap",columnGap:10,rowGap:10,justifyContent:"center",padding:20}} >
         {

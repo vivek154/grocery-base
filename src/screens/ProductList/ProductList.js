@@ -13,8 +13,6 @@ const ProductList = ({navigation}) => {
     const [categories,setCategories]=useState([])
     const [filters,setFilters]=useState([])
 
-    //console.log("*****mycartprods****",myCartProducts)
-    //console.log("****** filters*********",filters)
     const requestProducts = async () =>{
       try{
         let response = await getAllProducts()
@@ -37,7 +35,6 @@ const ProductList = ({navigation}) => {
     
     const handleFilterBtnPress= async(item)=>{
       await requestProducts()
-     // console.log("*****item.id*****",item.id)
       if(filters.indexOf(item.id) == -1) {
         setFilters((prevState)=> [...prevState,item.id])
       }
@@ -54,8 +51,6 @@ const ProductList = ({navigation}) => {
           return filters.indexOf(product.categoryId) !== -1
         })
 
-        //console.log("*******************************")
-        //console.log("filtered Products",filteredProducts)
         setProducts(filteredProducts)
       }}
 

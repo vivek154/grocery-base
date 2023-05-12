@@ -20,7 +20,7 @@ const PageHeadBar = ({title,navigation}) => {
     navigation.navigate("MainNotification")
   }
   const cart=useSelector((state)=>state.auth.myCart);
-  const count=cart.length
+  const count=cart?.length?cart.length:0
   return (
     <View style={styles.container}>
       <Text style={{fontSize:23,fontWeight:"bold",color:"black"}}>{title}</Text>

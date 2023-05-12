@@ -1,7 +1,6 @@
 
 import { StyleSheet, Text, View, Image, Pressable,ActivityIndicator} from 'react-native'
 import React, { useEffect, useState } from 'react'
-//import DeleteIcon from "./images/delete.svg"
 import QuantityButtons from '../../QuantityButtons/QuantityButtons'
 import { deletemycart, getmycart, postmycart, updateQuantity } from '../../../api/api'
 import { useDispatch, useSelector } from 'react-redux'

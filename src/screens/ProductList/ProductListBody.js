@@ -12,15 +12,12 @@ import { useSelector } from 'react-redux'
 const ProductListBody = (props) => {
   const {navigation,refRBSheet,products}=props
 
-
- // console.log("mycart store***",myCartProducts)
-
   return (
 <>
     <PageHeadBar title="Product List" navigation={navigation}></PageHeadBar> 
-    <View style={{flexDirection:"row",justifyContent:"space-between",marginHorizontal:20,marginVertical:15,}}>
+    <View style={{flexDirection:"row",justifyContent:"space-between",marginHorizontal:20,marginVertical:0,}}>
+        <View></View>
         <CustomButton1 onPress={()=>{refRBSheet.current.open()}}></CustomButton1>
-        <CustomButton2></CustomButton2>
     </View>
     <ScrollView style={{backgroundColor:"white",marginVertical:4}}>
       <View style={{flex:1,paddingBottom:60,flexDirection:"row",flexWrap:"wrap",justifyContent:"center",columnGap:10,rowGap:10,paddingTop:10}}>

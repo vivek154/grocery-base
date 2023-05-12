@@ -19,7 +19,7 @@ const DeliveryCard = ({navigation}) => {
           <View style={styles.middleBox}>
             <Text style={{ fontWeight: "bold", color: "black", fontSize: 15 }}>Deliver To</Text>
             <Text style={{ color: "black" }}>{address?address:"N/A"}</Text>
-            <Text style={{ color: "black" }}>$10</Text>
+            {/*<Text style={{ color: "black" }}>$10</Text>*/}
           </View>
         </View>
       </View>

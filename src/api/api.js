@@ -57,7 +57,6 @@ export const getmycart = (userid) => {
   //console.log("user Id get my cart ", userid)
   const url = `${API_URL}cart/get-usercart`
   let response = authAxiosInstance.post(url, { userId: userid });
-  console.log ("******* response from cart ******",response)
   return response
 }
 export const postmycart = (productId, userId, count) => {

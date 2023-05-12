@@ -14,13 +14,13 @@ const Delivery = (props) => {
         Alert.alert("OrderSuccessfull")
     }
     function showPaymentOptions(){
-        props.navigation.navigate("PaymentOptions");
+
+        props.navigation.navigate("MyOrder")
         openalert();
     }
     const navigation=props.navigation;
 
-    const price=useSelector((state)=>state.auth.myCart);
-    console.log("Price",price);
+    const totalPrice=useSelector((state)=>state.auth.totalPrice);
     
     return (
         <>
@@ -28,7 +28,7 @@ const Delivery = (props) => {
                 <View>
 
                     <DeliveryCard navigation={navigation}></DeliveryCard>
-                    <Text style={{ alignSelf: 'flex-start', marginVertical:10, color: 'black', fontWeight: 'bold', fontSize: 23,marginHorizontal:27 }}>Total Bill Amount : ₹100 </Text>
+                    <Text style={{ alignSelf: 'flex-start', marginVertical:10, color: 'black', fontWeight: 'bold', fontSize: 23,marginHorizontal:27 }}>Total Bill Amount : ₹ {totalPrice}</Text>
                     <View style={{marginVertical:20}}>
                     <Text style={{ alignSelf: 'flex-start',marginHorizontal:27,  color: 'black', fontWeight: 'bold', fontSize: 23 }}>Payment Option :</Text>
                     <TouchableOpacity style={{marginHorizontal:20,marginVertical:20}}>
