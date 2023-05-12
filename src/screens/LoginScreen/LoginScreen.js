@@ -98,7 +98,7 @@ const LoginScreen = ({navigation}) => {
         {showActivityIndicator && <ActivityIndicator></ActivityIndicator>}
 
         
-          <Text
+         {/* <Text
             style={{
               color: '#ff9900',
               textDecorationLine: 'underline',
@@ -107,8 +107,8 @@ const LoginScreen = ({navigation}) => {
             }}
             onPress={() => Linking.openURL('/')}>
             Forget Password?
-          </Text>
-        <View style={{justifyContent:"center",alignItems:"center"}}>  
+          </Text>*/}
+      {/* <View style={{justifyContent:"center",alignItems:"center"}}>  
           <Text style={{marginVertical:40,}}>
             Don't have an account 
             <Text style={{color: '#FF5403',marginHorizontal:2}} onPress={showRegistration}>
@@ -116,6 +116,7 @@ const LoginScreen = ({navigation}) => {
             </Text>
           </Text>
         </View>
+        */}
       </View>
     </View>
   );

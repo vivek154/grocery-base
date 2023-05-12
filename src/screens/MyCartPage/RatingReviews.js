@@ -11,6 +11,7 @@ const RatingReviews = ({navigation}) => {
             <View style={{ flex: 1, justifyContent: 'center' }} >
                 <Text style={{ alignSelf: 'center', fontWeight: 'bold', color: 'black' }}> Currently data is not avaliable</Text>
             </View>
+           
         </>
     )
 }

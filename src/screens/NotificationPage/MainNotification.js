@@ -24,8 +24,8 @@ const MainNotification=({navigation})=>
 
         <PageHeader text="Notifications" navigation={navigation} navigateTo={"MyProfile"}></PageHeader>
        
-        <ScrollView>
-        <View style={{flexDirection:'row',justifyContent:'space-between',margin:10}}>
+       {/*  <ScrollView>
+       <View style={{flexDirection:'row',justifyContent:'space-between',margin:10}}>
             <Text style={{marginLeft:18,fontWeight:'bold',color:"black"}}>Today</Text>
             <Text style={{color:"#FF5403"}}>View All</Text>
         </View>
@@ -40,10 +40,14 @@ const MainNotification=({navigation})=>
                 })
              }
         </View>
-
+*
         </View>
         </ScrollView>
-
+         
+*/}
+<View style={{ flex: 1, justifyContent: 'center' }} >
+                <Text style={{ alignSelf: 'center', fontWeight: 'bold', color: 'black' }}> Currently data is not avaliable</Text>
+            </View>
         
         </>
     )

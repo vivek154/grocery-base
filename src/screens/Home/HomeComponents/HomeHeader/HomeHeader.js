@@ -65,9 +65,9 @@ const HomeHeader = props => {
             alignSelf: 'center',
           }}>
           <View style={{marginLeft: 0}}>
-            <BurgerIcon
+            {/*<BurgerIcon
               width={0.063 * width}
-              height={0.063 * width}></BurgerIcon>
+              height={0.063 * width}></BurgerIcon>*/}
           </View>
           <View
             style={{flexDirection: 'row', marginRight: 0, gap: 0.05 * width}}>

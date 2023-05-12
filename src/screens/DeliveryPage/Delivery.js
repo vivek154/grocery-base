@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image ,Pressable} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image ,Pressable, Alert} from 'react-native';
 
 
 
@@ -8,8 +8,15 @@ import { useSelector } from 'react-redux';
 
 const Delivery = (props) => {
 
+
+    const openalert=()=>
+    {
+        Alert.alert("OrderSuccessfull")
+    }
     function showPaymentOptions(){
+
         props.navigation.navigate("MyOrder")
+        openalert();
     }
     const navigation=props.navigation;
 
